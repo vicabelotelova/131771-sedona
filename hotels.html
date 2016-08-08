@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  </head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt="Седона"></a>
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="index.html">Информация</a>
+					</li>
+					<li>
+						<a href="#">Фото и видео</a>
+					</li>
+					<li>
+						<a href="#">Карта штата</a>
+					</li>
+					<li>
+						<a href="#">Гостиницы</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<div class="filter">
+			<form action="">
+				<div class="filer-item">
+					<strong>Инфраструктура:</strong><br>
+					<input type="checkbox"><label>Бассейн</label><br>
+					<input type="checkbox"><label>Парковка</label><br>
+					<input type="checkbox"><label>Wi-fi</label>
+				</div>
+				<div class="filer-item">
+					<strong>Тип жилья:</strong><br>
+					<input type="checkbox"><label>Гостиница</label><br>
+					<input type="checkbox"><label>Мотель</label><br>
+					<input type="checkbox"><label>Апартаменты</label>
+				</div>
+				<div class="filer-item">
+					<strong>Стоимость в сутки (р):</strong><br>
+					<label>От</label><input type="text" value="0">
+					<label>До</label><input type="text" value="3000"><br>
+					<input type="range" min="0" max="3000"><br>
+					<button>Показать</button>
+				</div>	
+			</form>
+		</div>
+		<div class="sorting">
+			<h3>Найдено: 3</h3>
+			<span>Сортировка</span>
+			<ul>
+				<li>
+					<a href="#">По цене</a>
+				</li>
+				<li>
+					<a href="#">По типу</a>
+				</li>
+				<li>
+					<a href="#">По рейтингу</a>
+				</li>
+			</ul>
+			<div class="price-up">
+				<img src="img/price-up.png" alt="Цены по возрастанию">
+			</div>
+			<div class="price-down">
+				<img src="img/price-down.png" alt="Цены по убыванию">
+			</div>
+		</div>
+		<div class="hotel">
+			<div class="preview">
+				<div class="img-preview">
+					<img src="img/AmaraResort.jpg" alt="Amara Resort & Spa">
+				</div>
+				<div class="about">
+					<strong>Amara Resort & Spa</strong><br>
+					<span>Гостиница</span>
+					<span>от 3500 р.</span><br>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
+				</div>
+			</div>
+			<div class="raiting">
+				<div class="star">
+					<img src="img/star.jpg" alt="Звездность">
+				</div>
+				<span>Рейтинг: 8,5</span>
+			</div>
+		</div>
+		<div class="hotel">
+			<div class="preview">
+				<div class="img-preview">
+					<img src="img/DesertQuailinn.jpg" alt="Desert Quail inna">
+				</div>
+				<div class="about">
+					<strong>Desert Quail inn</strong><br>
+					<span>Мотель</span>
+					<span>от 2000 р.</span><br>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
+				</div>
+			</div>
+			<div class="raiting">
+				<div class="star">
+					<img src="img/star.jpg" alt="Звездность">
+				</div>
+				<span>Рейтинг: 8,5</span>
+			</div>
+		</div>
+		<div class="hotel">
+			<div class="preview">
+				<div class="img-preview">
+					<img src="img/VillasatPocoDiablo.jpg" alt="Villas at Poco Diablo">
+				</div>
+				<div class="about">
+					<strong>Villas at Poco Diablo</strong><br>
+					<span>Апартаменты</span>
+					<span>от 4000 р.</span><br>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
+				</div>
+			</div>
+			<div class="raiting">
+				<div class="star">
+					<img src="img/star.jpg" alt="Звездность">
+				</div>
+				<span>Рейтинг: 8,5</span>
+			</div>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<section class="footer-contacts">
+				<strong>#VisitSedona</strong>
+			</section>
+			<section class="footer-contacts">
+				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          		<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+         		<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			</section>
+			<section class="footer-contacts">
+				<div class="img-made">
+					<img src="img/htmlacademy.png" alt="htmlacademy">
+				</div>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>

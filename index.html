@@ -28,14 +28,12 @@
 				</ul>
 			</nav>
 		</div>
-	</div>
+	</header>
 	<main class="container">
 		<div class="main-screen">
-				<span>Welcome</span><br>
-				<span>to the gordeous</span>
+				<span>Welcome <br>to the gordeous</span>
 				<h1>Sedona</h1>
-				<span>“Because the Grand</span><br>
-				<span>Canyon sucks!„</span>
+				<span>“Because the Grand <br>Canyon sucks!„</span>
 		</div>
 		<div class="what-is-sedona">
 			<h2>Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
@@ -44,7 +42,7 @@
 			<div class="feature-1">
 				<div class="advantage">
 					<strong>Настоящий <br> городок</strong><br>
-					<span>-№1-</span><br>
+					<div class="feature-number">-№1-</div>
 					<span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
 				</div>
 				<div class="img-advantage">
@@ -80,23 +78,23 @@
 				</div>
 				<div class="advantage">
 					<strong>Там есть <br> мост дьявола</strong><br>
-					<span>-№2-</span><br>
+					<div class="feature-number">-№2-</div>
 					<span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
 				</div>	
 			</div>
 			<div class="advantage">
 				<strong>Небольшая <br> площадь</strong><br>
-				<span>-№3-</span><br>
+				<div class="feature-number">-№3-</div>
 				<span>Все достопримечательности находятся очень близко</span>
 			</div>
 			<div class="advantage">
 				<strong>Красивая <br> Дорога</strong><br>
-				<span>-№4-</span><br>
+				<div class="feature-number">-№4-</div>
 				<span>Ехать в Седону из Лас-Вегаса совсем не скучно! </span>
 			</div>
 			<div class="advantage">
 				<strong>Мало <br> туристов</strong><br>
-				<span>-№5-</span><br>
+				<div class="feature-number">-№5-</div>
 				<span>Большинство едет в Гранд Каньон и толпится там</span>
 			</div>
 		</div>
@@ -109,10 +107,16 @@
 			<div class="form-wrapper">
 				<h3>Поиск гостиницы в Седоне</h3>
 				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-					<label for="fromdaterent">Дата заезда:</label><input id="fromdaterent" type="date" min="2016-01-01" max="2050-01-01"><br>
-					<label for="todaterent">Дата выезда:</label><input id="todaterent" type="date" min="2016-01-01" max="2050-01-01"><br>
+				<div class="input-wrapper">	
+					<label for="fromdaterent">Дата заезда:</label><input id="fromdaterent" type="date" min="2016-01-01" max="2050-01-01">
+				</div>
+				<div class="input-wrapper">	
+					<label for="todaterent">Дата выезда:</label><input id="todaterent" type="date" min="2016-01-01" max="2050-01-01">
+				</div>	
 					<label for="adultcount">Взрослые:</label><input id="adultcount" type="number" min="1" max="120" step="1">
+				<div class="input-wrapper">		
 					<label for="kidcount">Дети:</label><input id="kidcount" type="number" min="0" max="120" step="1">
+				</div>	
 					<button type="button">Найти</button>
 				</form>	
 			</div>

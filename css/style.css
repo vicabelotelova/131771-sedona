@@ -4,15 +4,147 @@ body {
 	line-height: 21px;
 	color: #333;
 }
+
 h2 {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000;
 	font-weight: bold;
 }
+
 h3 {
 	font-size: 21px;
 	line-height: 26px;
 	color: #fff;
 	font-weight: bold;
+}
+
+html,
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background: yellow;
+}
+
+.logo {
+	position: absolute;
+	left: 531px;
+	top: 0;
+}
+
+.what-is-sedona {
+	margin-bottom: 60px;
+}
+
+.feature-1 > .advantage {
+	width: 280px;
+	float: left;
+	padding: 60px;
+	padding-top: 50px;
+}
+
+.feature-1 > .img-advantage {
+	float: right;
+}
+
+.feature-item {
+	float: left;
+	width: 280px;
+	padding: 50px 60px;
+}
+.feature-2 > .advantage {
+	width: 280px;
+	float: right;
+	padding: 50px 60px;
+}
+
+.feature-2 > .img-advantage {
+	float: left;
+}
+
+.feature-3 > .advantage {
+	float: left;
+	width: 280px;
+	padding: 50px 60px;
+}
+
+.travel {
+	padding-top: 60px;
+}
+
+.footer-contacts {
+	float: left;
+	width: 240px;
+	padding: 35px 70px;
+}
+
+.filter-item {
+	float: left;
+	width: 170px;
+	padding-top: 30px;
+	margin-left: 70px;
+}
+.filter-item:last-child {
+	float: right;
+	width: 330px;
+	margin-right: 70px;
+}
+
+.sorting-wrapper {
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.sorting p {
+	float: left;
+	padding: 35px 0;
+	margin-right: 40px;
+}
+
+.sorting p:first-child {
+	margin-right: 55px;
+}
+
+.price-up, .price-down  {
+	float: right;
+	padding: 35px 0;
+	position: relative;
+	top: 10px;
+}
+
+.hotel {
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.img-preview, .about {
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.raiting {
+	float: right;
+}
+.img-preview {
+	width: 140px;
+	padding-right: 25px;
+}
+
+.about {
+	width: 260px;
 }

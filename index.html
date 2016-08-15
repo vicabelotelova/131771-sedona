@@ -9,7 +9,7 @@
   	<header class="main-header">
 		<div class="container">
 			<div class="logo">
-				<img src="img/logo.png" with="138" height="70" alt="Седона">
+				<img src="img/logo.png" width="138" height="70" alt="Седона">
 			</div>
 			<nav class="main-navigation">
 				<ul>
@@ -30,16 +30,12 @@
 		</div>
 	</header>
 	<main class="container">
-		<div class="main-screen">
-				<span>Welcome <br>to the gordeous</span>
-				<h1>Sedona</h1>
-				<span>“Because the Grand <br>Canyon sucks!„</span>
-		</div>
+		<div class="main-screen"></div>
 		<div class="what-is-sedona">
 			<h2>Седона - небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
 			<span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
 		</div>	
-			<div class="feature-1">
+			<div class="feature-1 clearfix">
 				<div class="advantage">
 					<strong>Настоящий <br> городок</strong><br>
 					<div class="feature-number">-№1-</div>
@@ -57,7 +53,7 @@
 					<strong>Жилье</strong><br>
 					<span>Рекомендуем пожить в настоящем <br>мотеле, все как в кино</span>
 				</div>
-				<div class="feature-item">
+				<div class="feature-item clearfix">
 					<div class="img-feature">
 						<img src="img/food.png" width="74" height="70" alt="Еда">
 					</div>
@@ -72,7 +68,7 @@
 					<span>Не только китайского, но и местного <br>производства!</span>
 				</div>
 			</div>
-			<div class="feature-2">
+			<div class="feature-2 clearfix">
 				<div class="img-advantage">
 					<img src="img/advantage-2.jpg" width="800" height="256" alt="Мост - месть дьявола">
 				</div>
@@ -82,6 +78,7 @@
 					<span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
 				</div>	
 			</div>
+			<div class="feature-3 clearfix">
 			<div class="advantage">
 				<strong>Небольшая <br> площадь</strong><br>
 				<div class="feature-number">-№3-</div>
@@ -89,7 +86,7 @@
 			</div>
 			<div class="advantage">
 				<strong>Красивая <br> Дорога</strong><br>
-				<div class="feature-number">-№4-</div>
+				<div class="advantage">-№4-</div>
 				<span>Ехать в Седону из Лас-Вегаса совсем не скучно! </span>
 			</div>
 			<div class="advantage">
@@ -97,15 +94,12 @@
 				<div class="feature-number">-№5-</div>
 				<span>Большинство едет в Гранд Каньон и толпится там</span>
 			</div>
-		</div>
+			</div>
 		<div class="travel">
 			<h2>Заинтересовались?</h2>
 			<span>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</span>
-			<div class="map">
-				<img src="img/map.jpg" width="1200" height="593" alt="Карта">
-			</div>
 			<div class="form-wrapper">
-				<h3>Поиск гостиницы в Седоне</h3>
+				<button type="button">Поиск гостиницы в Седоне</button>
 				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 				<div class="input-wrapper">	
 					<label for="fromdaterent">Дата заезда:</label><input id="fromdaterent" type="date" min="2016-01-01" max="2050-01-01">
@@ -121,6 +115,9 @@
 				</form>	
 			</div>
 		</div>
+		<div class="map">
+				<img src="img/map.jpg" width="1200" height="593" alt="Карта">
+			</div>
 	</main>
 	<footer class="main-footer">
 		<div class="container">

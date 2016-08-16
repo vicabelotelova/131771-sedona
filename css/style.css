@@ -41,9 +41,9 @@ body {
 }
 
 .logo {
-	position: absolute;
-	left: 531px;
-	top: 0;
+	width: 138px;
+	margin: 0 auto;
+	height: 0;
 }
 
 .what-is-sedona {
@@ -59,6 +59,7 @@ body {
 
 .feature-1 > .img-advantage {
 	float: right;
+	width: 800px;
 }
 
 .feature-item {
@@ -66,6 +67,7 @@ body {
 	width: 280px;
 	padding: 50px 60px;
 }
+
 .feature-2 > .advantage {
 	width: 280px;
 	float: right;
@@ -73,6 +75,7 @@ body {
 }
 
 .feature-2 > .img-advantage {
+	width: 800px;
 	float: left;
 }
 
@@ -92,21 +95,20 @@ body {
 	padding: 35px 70px;
 }
 
+.container-inner {
+	margin-right: 70px;
+	margin-left: 70px;
+}
+
 .filter-item {
 	float: left;
 	width: 170px;
 	padding-top: 30px;
-	margin-left: 70px;
 }
+
 .filter-item:last-child {
 	float: right;
 	width: 330px;
-	margin-right: 70px;
-}
-
-.sorting-wrapper {
-	margin-left: 70px;
-	margin-right: 70px;
 }
 
 .sorting p {
@@ -121,14 +123,10 @@ body {
 
 .price-up, .price-down  {
 	float: right;
+	width: 100px;
 	padding: 35px 0;
 	position: relative;
 	top: 10px;
-}
-
-.hotel {
-	margin-left: 70px;
-	margin-right: 70px;
 }
 
 .img-preview, .about {

@@ -7,31 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
-	<header class="main-header">
-		<div class="container">
+	<div class="container">
+		<header class="main-header">
 			<div class="logo">
-				<a href="index.html"><img src="img/logo.png" alt="Седона"></a>
+				<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
 			</div>
-			<nav class="main-navigation">
-				<ul>
-					<li>
-						<a href="index.html">Информация</a>
+			<nav class="main-navigation clearfix">
+				<ul>	
+					<li class="left-menu">
+						<a href="#">Информация</a>
 					</li>
-					<li>
+					<li class="left-menu">
 						<a href="#">Фото и видео</a>
 					</li>
-					<li>
+					<li class="right-menu">
 						<a href="#">Карта штата</a>
 					</li>
-					<li>
-						<a href="#">Гостиницы</a>
+					<li class="right-menu this-page">
+						<a href="hotels.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
-		</div>
-	</header>
+		</header>
+	</div>
 	<main class="container">
-		<div class="filter clearfix container-inner">
+		<div class="filter clearfix">
+		<div class="container-inner">	
 			<form action="">
 				<div class="filter-item ">
 					<strong>Инфраструктура:</strong><br>
@@ -47,8 +48,10 @@
 				</div>
 				<div class="filter-item">
 					<strong>Стоимость в сутки (р):</strong><br>
+					<div class="price">
 					<label>От</label><input type="text" value="0">
-					<label>До</label><input type="text" value="3000"><br>
+					<label>До</label><input type="text" value="3000">
+					</div>
 					<div class="slider">
 						<div class="slider-range"></div>
 						<span class="slider-handle"></span>
@@ -57,23 +60,23 @@
 					<button>Показать</button>
 				</div>	
 			</form>
+		</div>	
 		</div>
-		<div class="sorting-wrapper clearfix container-inner">
+		<div class="sorting-wrapper clearfix">
+		<div class="container-inner">	
 			<div class="sorting">
 				<p>Найдено: 3</p>			
 				<p>Сортировка<p>
 				<p><a href="#">По цене</a></p>
 				<p><a href="#">По типу</a></p>
 				<p><a href="#">По рейтингу</a></p>
-				<div class="price-up">
-					<img src="img/price-up.png" alt="Цены по возрастанию">
-				</div>
-				<div class="price-down">
-					<img src="img/price-down.png" alt="Цены по убыванию">
-				</div>
+				<div class="price-up  icon-up-dir"></div>
+				<div class="price-down  icon-down-dir"></div>
 			</div>
+		</div>	
 		</div>
-		<div class="hotel clearfix container-inner">
+		<div class="hotel clearfix">
+		<div class="container-inner">	
 			<div class="preview">
 				<div class="img-preview">
 					<img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
@@ -83,26 +86,20 @@
 					<span>Гостиница</span>
 					<span>от 3500 р.</span><br>
 					<a href="#">Подробнее</a>
-					<a href="#">Забронировать</a>
+					<a href="#" class="brone">Забронировать</a>
 				</div>
 			</div>
 			<div class="raiting">
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
+				<div class="star icon-star"></div>
+				<div class="star icon-star"></div>
+				<div class="star icon-star"></div>
+				<div class="star icon-star"></div><br>
 				<span>Рейтинг: 8,5</span>
 			</div>
+		</div>	
 		</div>
-		<div class="hotel clearfix container-inner">
+		<div class="hotel clearfix">
+		<div class="container-inner">	
 			<div class="preview">
 				<div class="img-preview">
 					<img src="img/desert-quail.jpg" width="135" height="90" alt="Desert Quail inna">
@@ -112,20 +109,18 @@
 					<span>Мотель</span>
 					<span>от 2000 р.</span><br>
 					<a href="#">Подробнее</a>
-					<a href="#">Забронировать</a>
+					<a href="#" class="brone">Забронировать</a>
 				</div>
 			</div>
 			<div class="raiting">
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<span>Рейтинг: 8,5</span>
+				<div class="star icon-star"></div>
+				<div class="star icon-star"></div><br>
+				<span>Рейтинг: 8,9</span>
 			</div>
+		</div>	
 		</div> 
-		<div class="hotel clearfix container-inner">
+		<div class="hotel clearfix">
+		<div class="container-inner">	
 			<div class="preview">
 				<div class="img-preview">
 					<img src="img/villas-at-poco.jpg" width="135" height="90" alt="Villas at Poco Diablo">
@@ -135,38 +130,31 @@
 					<span>Апартаменты</span>
 					<span>от 4000 р.</span><br>
 					<a href="#">Подробнее</a>
-					<a href="#">Забронировать</a>
+					<a href="#" class="brone">Забронировать</a>
 				</div>
 			</div>
 			<div class="raiting">
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<div class="star">
-					<img src="img/star.jpg" alt="Звезда">
-				</div>
-				<span>Рейтинг: 8,5</span>
+				<div class="star icon-star"></div>
+				<div class="star icon-star"></div>
+				<div class="star icon-star"></div><br>
+				<span>Рейтинг: 9,2</span>
 			</div>
+		</div>	
 		</div>
 	</main>
-	<footer class="main-footer">
+	<footer class="main-footer clearfix">
 		<div class="container">
 			<section class="footer-contacts">
-				<strong>#VisitSedona</strong>
+				<a href="https://www.instagram.com/explore/tags/visitsedona/">#VisitSedona</a>
 			</section>
 			<section class="footer-contacts">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          		<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-         		<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<a class="social icon-twitter" href="#"></a>
+          		<a class="social icon-facebook" href="#"></a>
+         		<a class="social icon-youtube" href="#"></a>
 			</section>
 			<section class="footer-contacts">
 				<span>Website by</span>
-				<div class="img-made">
-					<img src="img/htmlacademy.png" alt="htmlacademy">
-				</div>
+				<div class="img-made"></div>
 			</section>
 		</div>
 	</footer>

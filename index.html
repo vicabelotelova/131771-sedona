@@ -3,32 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<header class="main-header">
-		<div class="container">
+ 	<div class="container">
+		<header class="main-header">
 			<div class="logo">
-				<img src="img/logo.png" width="138" height="70" alt="Седона">
+				<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Седона"></a>
 			</div>
-			<nav class="main-navigation">
-				<ul>
-					<li>
+			<nav class="main-navigation clearfix">
+				<ul>	
+					<li class="left-menu">
 						<a href="#">Информация</a>
 					</li>
-					<li>
+					<li class="left-menu">
 						<a href="#">Фото и видео</a>
 					</li>
-					<li>
+					<li class="right-menu">
 						<a href="#">Карта штата</a>
 					</li>
-					<li>
+					<li class="right-menu">
 						<a href="hotels.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
-		</div>
-	</header>
+		</header>
+	</div>
 	<main class="container">
 		<div class="main-screen"></div>
 		<div class="what-is-sedona">
@@ -38,8 +40,8 @@
 			<div class="feature-1 clearfix">
 				<div class="advantage">
 					<strong>Настоящий <br> городок</strong><br>
-					<div class="feature-number">-№1-</div>
-					<span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
+					<div class="feature-number">&mdash; №1 &mdash;</div>
+					<span>Седона — не аттракцион для туристов, там течет своя жизнь</span>
 				</div>
 				<div class="img-advantage">
 					<img src="img/advantage-1.jpg" width="800" height="256" alt="Седона - настоящий городок">
@@ -51,18 +53,18 @@
 						<img src="img/house.png" width="75" height="72" alt="Жилье">
 					</div>	
 					<strong>Жилье</strong><br>
-					<span>Рекомендуем пожить в настоящем <br>мотеле, все как в кино</span>
+					<span>Рекомендуем пожить в настоящем <br>мотеле, все как в кино!</span>
 				</div>
 				<div class="feature-item clearfix">
 					<div class="img-feature">
-						<img src="img/food.png" width="74" height="70" alt="Еда">
+						<img src="img/food.png" width="75" height="72" alt="Еда">
 					</div>
 					<strong>Еда</strong><br>
-					<span>Всегда заказывайте фирменный бергер,<br>Вы не разочаруетесь</span>
+					<span>Всегда заказывайте фирменный бергер,<br>Вы не разочаруетесь!</span>
 				</div>
 				<div class="feature-item">
 					<div class="img-feature">
-						<img src="img/souvenir.png" width="64" height="76" alt="Сувениры">
+						<img src="img/souvenir.png" width="64" height="72" alt="Сувениры">
 					</div>
 					<strong>Сувениры</strong><br>
 					<span>Не только китайского, но и местного <br>производства!</span>
@@ -74,66 +76,66 @@
 				</div>
 				<div class="advantage">
 					<strong>Там есть <br> мост дьявола</strong><br>
-					<div class="feature-number">-№2-</div>
+					<div class="feature-number">&mdash; №2 &mdash;</div>
 					<span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
 				</div>	
 			</div>
 			<div class="feature-3 clearfix">
 			<div class="advantage">
 				<strong>Небольшая <br> площадь</strong><br>
-				<div class="feature-number">-№3-</div>
+				<div class="feature-number">&mdash; №3 &mdash;</div>
 				<span>Все достопримечательности находятся очень близко</span>
 			</div>
 			<div class="advantage">
 				<strong>Красивая <br> Дорога</strong><br>
-				<div class="advantage">-№4-</div>
+				<div class="feature-number">&mdash; №4 &mdash;</div>
 				<span>Ехать в Седону из Лас-Вегаса совсем не скучно! </span>
 			</div>
 			<div class="advantage">
 				<strong>Мало <br> туристов</strong><br>
-				<div class="feature-number">-№5-</div>
+				<div class="feature-number">&mdash; №5 &mdash;</div>
 				<span>Большинство едет в Гранд Каньон и толпится там</span>
 			</div>
 			</div>
 		<div class="travel">
 			<h2>Заинтересовались?</h2>
-			<span>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+			<span class=" clearfix">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+			<button type="button">Поиск гостиницы в Седоне</button>
 			<div class="form-wrapper">
-				<button type="button">Поиск гостиницы в Седоне</button>
 				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="input-wrapper">	
+				<p class="input-wrapper clearfix">	
 					<label for="fromdaterent">Дата заезда:</label><input id="fromdaterent" type="date" min="2016-01-01" max="2050-01-01">
-				</div>
-				<div class="input-wrapper">	
+				</p>
+				<p class="input-wrapper clearfix">	
 					<label for="todaterent">Дата выезда:</label><input id="todaterent" type="date" min="2016-01-01" max="2050-01-01">
-				</div>	
+				</p>	
+				<p class="input-wrapper clearfix adult">	
 					<label for="adultcount">Взрослые:</label><input id="adultcount" type="number" min="1" max="120" step="1">
-				<div class="input-wrapper">		
+				</p>	
+				<p class="input-wrapper clearfix kid">		
 					<label for="kidcount">Дети:</label><input id="kidcount" type="number" min="0" max="120" step="1">
-				</div>	
+				</p>	
 					<button type="button">Найти</button>
 				</form>	
 			</div>
-		</div>
-		<div class="map">
+			<div class="map">
 				<img src="img/map.jpg" width="1200" height="593" alt="Карта">
 			</div>
+		</div>
 	</main>
-	<footer class="main-footer">
+	<footer class="main-footer clearfix">
 		<div class="container">
 			<section class="footer-contacts">
-				<strong>#VisitSedona</strong>
+				<a href="https://www.instagram.com/explore/tags/visitsedona/">#VisitSedona</a>
 			</section>
 			<section class="footer-contacts">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          		<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-         		<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<a class="social icon-twitter" href="#"></a>
+          		<a class="social icon-facebook" href="#"></a>
+         		<a class="social icon-youtube" href="#"></a>
 			</section>
 			<section class="footer-contacts">
 				<span>Website by</span>
-				<div class="img-made">
-					<img src="img/htmlacademy.png" alt="htmlacademy">
-				</div>
+				<div class="img-made"></div>
 			</section>
 		</div>
 	</footer>

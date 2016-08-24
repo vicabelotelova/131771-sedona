@@ -36,28 +36,41 @@
 			<form action="#">
 				<div class="filter-item ">
 					<strong>Инфраструктура:</strong><br>
-					<input type="checkbox" checked><label>Бассейн</label><br>
-					<input type="checkbox"><label>Парковка</label><br>
-					<input type="checkbox"><label>Wi-fi</label>
+					<label class="kind-checkbox"><input type="checkbox" checked>
+						<span class="icon-check-on"></span>
+						Бассейн</label><br>
+					<label class="kind-checkbox"><input type="checkbox">
+						<span class="icon-check-off"></span>
+						Парковка</label><br>
+					<label class="kind-checkbox"><input type="checkbox">
+						<span class="icon-check-off"></span>
+						Wi-fi</label>
 				</div>
 				<div class="filter-item">
 					<strong>Тип жилья:</strong><br>
-					<input type="checkbox" checked><label>Гостиница</label><br>
-					<input type="checkbox" checked><label>Мотель</label><br>
-					<input type="checkbox" checked><label>Апартаменты</label>
+					<label class="kind-checkbox"><input type="checkbox" checked>
+						<span class="icon-check-on"></span>
+						Гостиница</label><br>
+					<label class="kind-checkbox"><input type="checkbox" checked>
+						<span class="icon-check-on"></span>
+						Мотель</label><br>
+					<label class="kind-checkbox"><input type="checkbox" checked>
+						<span class="icon-check-on"></span>
+						Апартаменты</label>
 				</div>
 				<div class="filter-item">
 					<strong>Стоимость в сутки (р):</strong><br>
 					<div class="price">
-					<label>От</label><input type="text" value="0">
-					<label>До</label><input type="text" value="3000">
+					<label class="min-price">От<input type="text"  name="min-price" value="0"></label>
+					<label class="max-price">До<input type="text" name="max-price" value="3000"></label>
 					</div>
 					<div class="slider">
-						<div class="slider-range"></div>
-						<span class="slider-handle"></span>
-						<span class="slider-handle"></span>
+						<div class="scale"><div class="bar"></div></div>
+						
+						<div class="range-toggle toggle-min"></div>
+						<div class="range-toggle toggle-max"></div>
 					</div>
-					<button>Показать</button>
+					<button type="submit">Показать</button>
 				</div>	
 			</form>
 		</div>	
@@ -67,11 +80,11 @@
 			<div class="sorting">
 				<p>Найдено: 3</p>			
 				<p>Сортировка<p>
-				<p><a href="#">По цене</a></p>
-				<p><a href="#">По типу</a></p>
-				<p><a href="#">По рейтингу</a></p>
-				<div class="price-up  icon-up-dir"></div>
-				<div class="price-down  icon-down-dir"></div>
+				<p><a href="#" class="sorting-item-first">По цене</a></p>
+				<p><a href="#" class="sorting-item">По типу</a></p>
+				<p><a href="#" class="sorting-item">По рейтингу</a></p>
+				<div class="price-up  icon-down-dir"></div>
+				<div class="price-down  icon-up-dir"></div>
 			</div>
 		</div>	
 		</div>

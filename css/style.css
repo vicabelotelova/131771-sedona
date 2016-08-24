@@ -127,7 +127,7 @@ h3 {
 
 .what-is-sedona span {
 	font-weight: normal;
-	padding-bottom: 50px;
+	padding-bottom: 48px;
 	display: block;
 }
 
@@ -151,7 +151,7 @@ h3 {
 .feature-1 .feature-number {
 	font-weight: normal;
 	line-height: 21px;	
-	padding-bottom: 18px;
+	padding-bottom: 15px;
 }
 
 .feature-1 span {
@@ -196,7 +196,7 @@ h3 {
 
 .features span {
 	display: block; 
-	padding-bottom: 32px;
+	padding-bottom: 30px;
 }
 
 .feature-2 > .advantage {
@@ -218,7 +218,7 @@ h3 {
 .feature-2 strong {
 	font-size: 21px;
 	line-height: 21px;
-	padding-top: 58px;
+	padding-top: 55px;
 	display: block;
 }
 
@@ -253,7 +253,7 @@ h3 {
 .feature-3 .feature-number {
 	font-weight: normal;
 	line-height: 21px;	
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .feature-3 span {
@@ -263,7 +263,7 @@ h3 {
 }
 
 .travel {
-	padding-top: 35px;
+	padding-top: 32px;
 	text-align: center;
 	background-color: #fff;
 }
@@ -292,7 +292,7 @@ h3 {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 31px 140px;
+  padding: 29px 140px;
 }
 
 .form-wrapper {
@@ -314,7 +314,7 @@ h3 {
 	width: 95px;
 	float: left;
 	padding-top: 10px;
-	padding-bottom: 20px;
+	padding-bottom: 18px;
 	padding-right: 15px;
 }
 
@@ -354,10 +354,6 @@ h3 {
 	background-position: 95% 8px;
 }
 
-.appointment-form input.plus {
-	background: url("../img/sprite-form.png") no-repeat 95% -24px,
-	url("../img/sprite-form.png") no-repeat 5% -50px;
-}
 
 .appointment-form input:hover {
 	background-color: #ebebeb;
@@ -365,8 +361,7 @@ h3 {
 
 .appointment-form input:focus {
 	background-color: #fff;
-	border: 1px solid #e5e5e5;
-	padding: 4px 21px; 
+	outline: 1px solid #f2f2f2;
 }
 
 .kid label {
@@ -377,16 +372,24 @@ h3 {
 }
 
 .adult input, .kid input {
-	width: 60px;
+	width: 65px;
+	text-align: center;
+	background-color: #f2f2f2;
+  	border: 1px solid #f2f2f2;
+  	z-index: 3;
 }
 
 .kid input {
-	margin-left: 0;
+	margin-left: -2px;
 }
 
 .adult label {
 	margin-left: -10px;
-	margin-right: 15px;
+	margin-right: 13px;
+}
+
+.kid label {
+	margin-left: -9px;
 }
 
 .adult, .kid{	
@@ -394,7 +397,7 @@ h3 {
 	display: block;
 	margin-top: -2px;
 	margin-bottom: 0;
-	padding-bottom: 35px;
+	padding-bottom: 39px;
 }
 
 .map {

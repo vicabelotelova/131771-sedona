@@ -97,6 +97,14 @@ h3 {
 	color: #766357;
 }
 
+.main-navigation .menu-active:hover {
+	color: #604e43;
+}
+
+.main-navigation .menu-active:active {
+	color: #dadada;
+}
+
 .main-screen {
 	width: 1200px;
 	height: 510px;
@@ -353,6 +361,7 @@ button.calendar {
 	float: right;
 	padding: 0;
 	outline: none;
+	color: #a9a9a9;
 } 
 
 button.calendar:hover {
@@ -862,16 +871,16 @@ a.arrow-active:hover {
 }
 
 .about .brone {
-	background-color:  #503e33;
+	background-color:  #766357;
 }
 
 .about .brone:hover {
-	background-color: #766357;
+	background-color: #604e43;
 	cursor: pointer;
 }
 
 .about .brone:active {
-	background-color: #604e43;
+	background-color: #503e33;
 	color: #928a85;
 }
 

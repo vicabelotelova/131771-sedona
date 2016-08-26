@@ -295,11 +295,11 @@ h3 {
   padding: 29px 140px;
 }
 
+
 .form-wrapper {
 	width: 570px;
 	position: relative;
 	margin: 0 auto;	
-	position: relative;
 }
 
 .form-wrapper form {
@@ -326,12 +326,16 @@ h3 {
 }
 
 .form-wrapper button:hover {
-	background-color: #669ec0;
+	background-color: #669ec0 ;
 }
 
 .form-wrapper button:active {
 	color: #94b9d2;	
-	background-color: #669ec0;
+	background-color: #5496bd;
+}
+
+.appointment-form {
+	position: relative;
 }
 
 .appointment-form input {
@@ -348,12 +352,33 @@ h3 {
   outline: none;
 }
 
-.appointment-form input.calendar {
-	background-image: url("../img/sprite-form.png");
-	background-repeat: no-repeat;
-	background-position: 95% 8px;
+.appointment-form .icon-calendar  {
+	width: 25px;
+	height: 25px;
+	font-size: 1.4em;
+	color: #c2c2c2;
+	background: url("../img/sprite-form.png") no-repeat;
+	position: absolute;
+	top: 60px;
+	left: 475px;
 }
 
+.appointment-form .input-wrapper:nth-child(2) .icon-calendar {
+	top: 128px;
+}
+
+.appointment-form .icon-calendar:hover {
+	color: #000;
+}
+
+.appointment-form .icon-calendar:active {
+	color: #81b3d2;
+}
+
+.appointment-form .icon-calendar:hover,
+ {
+	cursor: pointer;
+}
 
 .appointment-form input:hover {
 	background-color: #ebebeb;
@@ -364,40 +389,52 @@ h3 {
 	outline: 1px solid #f2f2f2;
 }
 
-.kid label {
-	text-align: right;
-	margin-left: 2px;
-	margin-right: 20px;
-
-}
-
-.adult input, .kid input {
-	width: 65px;
-	text-align: center;
-	background-color: #f2f2f2;
-  	border: 1px solid #f2f2f2;
-  	z-index: 3;
-}
-
-.kid input {
-	margin-left: -2px;
-}
-
-.adult label {
-	margin-left: -10px;
-	margin-right: 13px;
-}
-
-.kid label {
-	margin-left: -9px;
-}
-
-.adult, .kid{	
+.kid-counter, .adult-counter {
 	float: left;
-	display: block;
-	margin-top: -2px;
-	margin-bottom: 0;
-	padding-bottom: 39px;
+}
+
+.adult-counter label {
+	margin-right: 9px;
+	margin-left: -8px;
+}
+
+.kid-counter  label{
+	margin-right: -15px;
+	margin-left: 15px;
+}
+
+.kid-counter input, .adult-counter input {
+	width: 0px;
+	float: left;
+}
+
+button.count-minus, button.count-plus {
+	width: 36px;
+	height: 37px;
+	border: none;
+	background-color: #f2f2f2;
+	margin: 0;
+	float: left;
+	padding: 0;
+	outline: none;
+}
+
+button.count-plus:hover, button.count-minus:hover {
+	background-color: #ebebeb;
+}
+
+.icon-minus, .icon-plus {
+	font-size: 13px;
+	line-height: 38px;
+	color: #a9a9a9;
+}
+
+.icon-minus:hover , .icon-plus:hover {
+	color: #000;
+}
+
+.icon-plus:active, .icon-minus:active {
+	color: #81b3d2;
 }
 
 .map {
@@ -485,7 +522,7 @@ h3 {
 }
 
 .social:active {
-	background-color: #669ec0;
+	background-color: #5496bd;
 	color: #88b6d1;
 }
 
@@ -529,15 +566,40 @@ h3 {
 
 .kind-checkbox {
 	position: relative;
-	left: 5px;
+	top: 5px;
+	padding-left: 40px;
 	cursor: pointer;
 }
 
-.icon-check-off, .icon-check-on {
-	font-size: 1.7em;
-	position: relative;
-	top: 2px;
-	right: 10px;
+.kind-checkbox input[type="checkbox"] + span::before {
+	content: '\2610';
+	font-family: 'symbols-sedona';
+	font-size: 26px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+}
+
+.kind-checkbox input[type="checkbox"]:checked + span::before {
+	content: '\2611';
+	font-family: 'symbols-sedona';
+	font-size: 26px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.kind-checkbox input[type="checkbox"]:disabled + span::before {
+	content: '\2610';
+	font-family: 'symbols-sedona';
+	font-size: 26px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0px;
+	color: #6a6a6a;
 }
 
 .filter-item {
@@ -697,30 +759,38 @@ h3 {
 	color: #81b3d2;
 }
 
-.sorting-item:active {
+a.sort-active {
 	color: #000;
-	border: none;
+	border: none;	
 }
 
-.price-up, .price-down  {
+a.sort-active:hover {
+	color: #000;
+}
+
+
+a.arrow {
 	font-size: 23px;
 	line-height: 20px;
+	color: #ccc;
 	float: right;
 	position: relative;
-	top: 30px;
-	color: #ccc;
+	left: 473px;
+	top: -5px;
+	margin-right: -30px;
+	display: block;
 }
 
-.price-up:hover , .price-down:hover  {
+.arrow:hover {
 	color: #000;
 	cursor: pointer;
 }
 
-.price-up:active , .price-down:active  {
+a.arrow-active {
 	color: #81b3d2;
 }
 
-.price-up {
+a.arrow-active:hover {
 	color: #81b3d2;
 }
 
@@ -772,7 +842,7 @@ h3 {
 }
 
 .about a:active {
-	background-color: #669ec0;
+	background-color: #5496bd;
 	color: #94b9d2;
 }
 
@@ -781,7 +851,7 @@ h3 {
 }
 
 .about .brone:hover {
-	background-color: #604e43;
+	background-color: #503e33;
 	cursor: pointer;
 }
 

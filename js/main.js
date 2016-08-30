@@ -6,9 +6,10 @@ var adult_counter = document.querySelector("#adultcount");
 var kid_minus = document.querySelector(".kid-minus");
 var kid_plus = document.querySelector(".kid-plus");
 var kid_counter = document.querySelector("#kidcount");
-var form = document.querySelector(".search");
 var fromdata = document.querySelector(".fromdatarent");
 var todata = document.querySelector(".todatarent");
+var formsend = document.querySelector(".search");
+
 
 	search.addEventListener("click", function (event) {
 	event.preventDefault();
@@ -39,10 +40,14 @@ var todata = document.querySelector(".todatarent");
 		kid_counter.value = parseInt(kid_counter.value) + 1;
 		if (kid_counter.value > 9) { kid_counter.value = 9};
 	});
-	
-	form.addEventListener("click", function (event) {
+
+	formsend.addEventListener("submit", function(event) {
+		if (!fromdata.value || !todata.value) {
+			event.preventDefault();
+			myform.classList.remove("form-error");
+            myform.classList.add("form-error");
+		} else {
 			event.preventDefault();
 			myform.classList.add("form-send");
-			setTimeout(function() { myform.classList.remove("form-show") }, 1000);
-	})
-		
+		}
+      });

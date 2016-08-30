@@ -15,7 +15,7 @@ var formsend = document.querySelector(".appointment-form");
 	event.preventDefault();
 	myform.classList.toggle("form-show");
 	myform.classList.remove("form-send");
-	myform.classList.remove("form-error");
+	 myform.classList.remove("form-error");  
 	});
 
 	adult_minus.addEventListener("click", function (event) {
@@ -43,12 +43,14 @@ var formsend = document.querySelector(".appointment-form");
 	});
 
 	formsend.addEventListener("submit", function(event) {
-		myform.classList.remove("form-error");
 		if (!fromdata.value || !todata.value) {
 			event.preventDefault();
-            myform.classList.add("form-error");
+			myform.classList.remove("form-error");
+			myform.offsetWidth = myform.offsetWidth;
+            myform.classList.add("form-error");  
 		} else {
 			event.preventDefault();
+			myform.classList.remove("form-error");
 			myform.classList.add("form-send");
 			setTimeout(function() { myform.classList.remove("form-show")}, 1000);
 		}

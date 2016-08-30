@@ -6,15 +6,16 @@ var adult_counter = document.querySelector("#adultcount");
 var kid_minus = document.querySelector(".kid-minus");
 var kid_plus = document.querySelector(".kid-plus");
 var kid_counter = document.querySelector("#kidcount");
-var fromdata = document.querySelector(".fromdatarent");
-var todata = document.querySelector(".todatarent");
-var formsend = document.querySelector(".search");
+var fromdata = document.querySelector("#from_date_rent");
+var todata = document.querySelector("#to_date_rent");
+var formsend = document.querySelector(".appointment-form");
 
 
 	search.addEventListener("click", function (event) {
 	event.preventDefault();
 	myform.classList.toggle("form-show");
 	myform.classList.remove("form-send");
+	myform.classList.remove("form-error");
 	});
 
 	adult_minus.addEventListener("click", function (event) {
@@ -42,12 +43,13 @@ var formsend = document.querySelector(".search");
 	});
 
 	formsend.addEventListener("submit", function(event) {
+		myform.classList.remove("form-error");
 		if (!fromdata.value || !todata.value) {
 			event.preventDefault();
-			myform.classList.remove("form-error");
             myform.classList.add("form-error");
 		} else {
 			event.preventDefault();
 			myform.classList.add("form-send");
+			setTimeout(function() { myform.classList.remove("form-show")}, 1000);
 		}
       });

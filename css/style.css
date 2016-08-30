@@ -300,6 +300,19 @@ h3 {
 	width: 570px;
 	position: relative;
 	margin: 0 auto;	
+	display: none;
+}
+
+.form-show {
+	display: block;
+	animation-name: move-form;
+	animation-duration: .6s;
+}
+
+.form-send {
+	animation-name: send;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 .form-wrapper form {
@@ -397,7 +410,9 @@ button.calendar:active {
 }
 
 .kid-counter input, .adult-counter input {
-	width: 0px;
+	width: 30px;
+	padding: 6px 8px;
+	text-align: center;
 	float: left;
 }
 
@@ -435,11 +450,6 @@ button.count-plus:active .icon-plus{
 
 .map {
 	width: 100%;
-	height: 593px;
-}
-
-.map img {
-	width: 1200px;
 	height: 593px;
 }
 
@@ -934,6 +944,22 @@ a.arrow-active:hover {
 	min-height: 120px;
 }
 
+/*Анимация*/
+
+@keyframes move-form {
+	0% { 
+		transform: scaleY(0);
+	}
+	100% { 
+		tranform: scaleY(1);
+	}
+}
+
+@keyframes send {
+	to {
+		transform: translateY(1000px);
+	}
+}
 
 
 /*Cимволы для макета*/

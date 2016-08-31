@@ -47,7 +47,7 @@ var formsend = document.querySelector(".appointment-form");
 			event.preventDefault();
 			myform.classList.remove("form-error");
 			myform.offsetWidth = myform.offsetWidth;
-            myform.classList.add("form-error");  
+          	setTimeout(function () { myform.classList.add("form-error"); }, 0); 
 		} else {
 			event.preventDefault();
 			myform.classList.remove("form-error");

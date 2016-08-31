@@ -342,6 +342,7 @@ h3 {
 	padding: 17px 205px;
 	margin-bottom: 15px;
 	background-color: #81b3d2;
+	text-align: center;
 }
 
 .form-wrapper button:hover {
@@ -359,7 +360,7 @@ h3 {
 
 .appointment-form input {
   width: 268px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   padding: 6px 23px;
   font-size: 14px;
   line-height: 26px;
@@ -403,6 +404,8 @@ button.calendar:active {
 
 .kid-counter, .adult-counter {
 	float: left;
+	margin-top: 0px;
+	margin-bottom: 40px;
 }
 
 .adult-counter label {

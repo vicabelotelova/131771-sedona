@@ -923,6 +923,7 @@ a.arrow-active:hover {
 }
 
 .raiting {
+	width: 105px;
 	float: right;
 	margin-right: 10px;
 }
@@ -973,7 +974,7 @@ a.arrow-active:hover {
 	min-height: 120px;
 }
 
-/*Анимация
+/*Анимация*/
 
 @keyframes move-form {
 	0% { 
@@ -1029,13 +1030,12 @@ a.arrow-active:hover {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-facebook::before { content: "\66"; }  /*"f" */
+.icon-twitter::before { content: "\74"; }  /*"t" */
+.icon-up-dir::before { content: "\25b2"; }  /*"▲"*/ 
 .icon-down-dir::before { content: "\25bc"; } /* "▼" */
 .icon-star::before { content: "\2605"; } /* "★" */
 .icon-check-off::before { content: "\2610"; } /* "☐" */
